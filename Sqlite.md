@@ -32,7 +32,6 @@ DELETE FROM 表名 WHERE 条件语句
 DELETE FROM person WHERE name = 'Richyeoh'
 DELETE FROM person WHERE age = 18
 ```
-**注意：如果没有加`WHERE`会替换整个表**
 
 **Update语句：**
 ```SQL
@@ -44,8 +43,12 @@ UPDATE person SET name = '泽被苍生' WHERE name = 'Richyeoh'
 ```SQL
 完整的查询语句
 SELECT 字段名 FROM 表名 WHERE 条件语句 GROUP BY 分组字段名 HAVING 筛选条件 ORDER BY 排序
+```
+```SQL
 常用的查询语句
 SELECT 字段名 FROM 表名 WHERE 条件语句
-SELECT * FROM person WHERE name = 'Richyeoh'
 SELECT name,age FROM person
+SELECT * FROM person WHERE name = 'Richyeoh'
 ```
+
+**注意：上面条件语句中如果没有加`WHERE`则会替换整个表**
